@@ -1,0 +1,44 @@
+<!-- Border -->
+
+<!doctype html>
+<head>
+<style>
+	p.none {border-style: none;}
+	p.dotted {border-style: dotted;}
+	p.dashed {border-style: dashed;}
+	p.solid{border-style: solid;}
+	p.double {border-style: double; border-width: 30px;}
+	p.groove {border-style: groove; border-width: 20px; border-color: red;}
+	p.ridge {border-style: ridge; border-width: 20px; border-color: red;}
+	p.inset {border-style: inset; border-width: 20px; border-color: red;}
+	p.outset {border-style: outset; border-width: 20px; border-color: red;}
+	p.hidden {border-style: hidden;}
+	p.combine {border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: none;}
+	p.shorthandcombine {border-style: solid none dashed none; border-top-color: blue;}
+	p.shorthandproperty {border: 15px dotted blue;}
+	p.shorthandpropertyeachside {border-top: 10px dashed green;}
+
+</style>
+	<meta charset="UTF-8">
+	<title>w3schools CSS www.w3schools.com/css/</title>
+</head>
+<body>
+<p class="none">none</p>
+<p class="dotted">dotted</p>
+<p class="dashed">dashed</p>
+<p class="solid">solid</p>
+<p class="double">double 30px border-width=10px inner border + 10px outer border + 10px between inner and outer</p>
+<p class="groove">groove</p>
+<p class="ridge">ridge</p>
+<p class="inset">inset</p>
+<p class="outset">outset</p>
+<p class="hidden">hidden used for table elements with a collapse border</p>
+
+<p>border-width can also be specificy by thin, medium, or thick</p>
+<p class="combine">Combine border styles</p>
+<p class="shorthandcombine">Shorthand combine border styles.  If two styles, the first value is top and bottom and the second value is right and left; e.g. border-style: dotted dashed;  The shorthand also works with border-width and border-color.</p>
+<p class="shorthandproperty">shorthand property no commas border: {border-width, border-style, border-color}</p>
+<p class="shorthandpropertyeachside">Likewise for each side no commas border-top: {border-width, border-style, border-color}</p>
+
+</body>
+</html>

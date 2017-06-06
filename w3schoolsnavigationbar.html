@@ -1,0 +1,56 @@
+<!-- Navigation Bar -->
+
+<!doctype html>
+<head>
+<style>
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;	
+}
+
+li {
+	float: left; /* To keep display: block; and width: 120px;, must use float: left; */
+	display: inline; /*Inline elements can't have width.  Must remove display: block; and width: 120px; below */
+}
+
+a:link, a:visited {
+	display: block;
+	width: 120px;  /*width must be removed if li display: inline;*/
+	background-color: yellowgreen;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+/* No need to duplicate a:link and a:visited properties.  Only the change background-color: green; */
+a:hover, a:active {
+/*	display: block;
+	width: 120px;*/
+	background-color: green;
+/*	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px; */
+}
+</style>
+	<meta charset="UTF-8">
+	<title>w3schools CSS www.w3schools.com/css/</title>
+</head>
+<body>
+
+<ul>
+	<li><a href="#home.html">Home</a></li>
+	<li><a href="#news.html">News</a></li>
+	<li><a href="#contact.html">Contact</a></li>
+	<li><a href="#about.html">About</a></li>
+</ul>
+<br style="clear: both">	
+<p>We use href="#" for test links.</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- Horizontal Align -->
+
+<!doctype html>
+<head>
+<style>
+.center {
+	margin: auto;
+	width: 70%;
+	background-color: #b0e0e6;
+}
+
+.right {
+	position: absolute;
+	right: 0px;
+	width: 300px;
+	background-color: #b0e0e6;
+}
+
+</style>
+	<meta charset="UTF-8">
+	<title>w3schools CSS www.w3schools.com/css/</title>
+</head>
+<body>
+<p>A block element is an element that takes up the full width available and has a line break before and after it.  Examples are h1, p, and div.</p>
+
+<p>Center align using the margin property.  block elements can be center-aligned by setting the margin-left and margin-right to "auto".  A shortcut is margin: auto;  Setting the left and right margins to auto specifies they split the available margin equally.  The result is a centered element below.  The width 70% can be specified in px.  100% is useless because the block element stretches from left to right.  </p>
+<div class="center">
+	<p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+	<p>Whenever you feel like criticizing anyone, he told me, just remember that all the people in the world haven't had the advantages that you've had.</p>
+</div>
+
+<p>One method aligning elements use absolute positioning left and right align.  Position: absolute; right:0px; or left: 0px.  Absolute positioning can overlap elements in the flow.</p>
+<div class="right">
+	<p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+	<p>Whenever you feel like criticizing anyone, he told me, just remember that all the people in the world haven't had the advantages that you've had.</p>
+</div>
+<p>Whenever you feel like criticizing anyone, he told me, just remember that all the people in the world haven't had the advantages that you've had.</p>
+
+<p style="clear: both">If you want no browser margin and no browser padding, set body {padding:0; margin:0;} inside style. clear: both is not working here.</p>
+
+</body>
+</html>

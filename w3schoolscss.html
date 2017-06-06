@@ -1,0 +1,149 @@
+<!--Syntax Tutorial, Selectors Tutorial, Insert CSS, Background, Text, Font, Links, Lists, -->
+
+<!doctype html>
+<head>
+<style>
+	h1.centered, #para1 {
+		color: red;
+		text-align: center;
+	}
+	p.centered {
+		color: blue;
+		text-align: center; /* center, left, right, justify */
+	}
+	.selector1 {
+		color: green;
+		background-color: yellow;
+	}
+	.selector2 {
+		font-weight: bold;
+	}
+	body {
+		background-image: url("castlerock2.jpg");
+		background-repeat: no-repeat; /*repeat in a horizontal direction; repeat-y is verital direction; no-repeat doesn't repeat*/
+		background-position: right top;
+		background-attachment: fixed; /* image is fixed, doesn't scroll or doesn't move.  To move image, set background-attachment: scroll; */
+		/*shorthand property e.g.--> background: yellow url("Tulips.jpg") no-repeat right top fixed margin-right: 200px; */
+		font-size: 100%;
+	}
+	#decorate {
+		text-decoration: line-through; /* other choices underline or overline */
+	}
+	#transform {
+		text-transform: lowercase; /* other choices uppercase or capitalize */
+	}
+	#indentletterspacing {
+		text-indent: 50px;
+		letter-spacing: 3px; /* there's also word-spacing text property mentioned briefly in tutorial */
+	}
+	#font {
+		font-family: Arial, Helvetica, sans-serif;
+		font-style: normal; /* other choices italic, oblique which is learning text */
+		font-size: 2.0em; /* absolute in px  or relative in em.  Recommend relative to allow users to change text size in browsers.  1em = current font size. Set font-size: 100%; in body element.  */
+		font-weight: bold; /* sets bold.  other choices normal, lighter, bold, bolder, a number 100-900 where 400 is normal and 700 is bold */
+	}
+	a {
+		text-decoration: none; /* other choice underline, line-through */		
+	}
+	/* a:hover must be after a:link and a:visited. a:active must be after a:hover */
+	a:link {
+		color: blue;
+		background-color: yellow;
+	}
+	a:visited {
+		color: red;
+		background-color: green;
+	}
+	a:hover {
+		color: orange;
+		background-color: black;
+	}
+	a:active {
+		color: green;
+		background-color: red;
+	}
+	
+	ul.circle {
+		list-style-type: circle; /* circle is open circle.  other choices none, square, upper-roman for <ol>, lower-alpha for <ol>.  Probably more.  Google or go to w3schools.com for documentation */
+	}
+	ul#square {
+		list-style-type: square;
+	}
+	ol#alpha {
+		list-style-type: lower-alpha;
+	}
+	ul.plain {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	/* Can also use an image for the bullet points, set margins and padding for a custom list.  Tutorial */
+	/* Easier to use ul {list-style-image: url();} */
+	li#custom {
+		background-image: url("tomtom.jpg");
+		background-repeat: no-repeat; /* another option repeat */
+		padding-left: 25px;
+		background-position: 3px 0px; /* first number how much to the right, second number how much down.  Starts at top left */
+		margin: 5px;
+	}
+</style>
+	<meta charset="UTF-8">
+	<title>w3schools CSS www.w3schools.com/css/</title>
+</head>
+<body>
+selector {declaration; declaration;}
+<br>
+selector {property: value; property: value;}
+<p>property: value; is a declaration</p>
+
+class elements with element.classname affects html code with both element.classname
+<h1 class="centered">H1 centered Red and center-aligned heading</h1>
+<p class="centered">P centered Blue and center-aligned heading</p>
+<p class="selector1 selector2">Multiple classes green color and bold</p>
+<p id="para1">An element and an ID share a declaration</p>
+<p>There are three ways to insert CSS:  external style sheet, internal style sheet, inline style.  External stores CSS in a separate file &lt;link rel="stylesheet" type="text/css" href="file location"&gt;.  Internal stores CSS in present file using &lt;style&gt; in &lt;head&gt; section. Inline adds CSS declaration to the html tag or element; for example &lt; h1 style="color: blue; margin-left: 30px;"&gt;This is a heading.&lt;h1&gt;</p>
+<p>Multiple sytle sheets.  If some properties have been set for the same selector in differnet style sheets, the values will be inherited from the mores specific style sheet.  Styles can be specified into one:  inside an HTML element, inside the head section of an HTML page, in an external CSS file, and browser default; in other words, priority from high inside an HTML element to low external CSS file to browswer default.  In addition, if the external CSS link tag is below the style tag in header, the external CSS link tag takes priority.  It's like the CSS tag closest to the element takes priority in my words.</p>
+
+<p>Text Decoration property is used to set or remove decorations from text.  Mostly used to remove underlines from links for design purposes.  e.g., a {text-decoration: none;}</p>
+
+<p id="decorate">Decorate line-through.  Another choice is underline or overline.</p>
+
+<p id="transform">Uppercase, lowercase, or capitalize text.  I selected uppercase.</p>
+
+<p id="indentletterspacing">Indent the first line in a paragraph.  Letter spacing 3px. I’m still getting used to my new Samsung Galaxy S7.  I admit difficult taking pics with one hand.  My phone is enclosed in a protective case.  These ten pics are informative in wages, consumer intelligence, Linux commands, and Steph Curry is an MVP basketball player.  I’m happy my gym is getting new equipment.  I’m sad a ma and pa retail store is closing.  And take a look at a collector’s Japanese MahJong set.</p>
+
+<p id="font">font-family should hold several font names as a "failback" system.  Start with the font you want and end with a generic family.  Separate each font family with a comma.  Sans-serif fonts such as Arial and Verdana are easier to read than serif fonts such as Times New Roman and Georgia.  If the name of a font family is more than one word, it must be in quotation marks such as "Times New Roman".</p>
+<br>
+<a href="http://www.innovateinfinitely.com">Innovate Infinitely</a>
+<a href="G:/Raymond/html/indexelicomputerguy.html">Eli The Computer Guy</a>
+<a href="w3schoolscss.html">Current Web Page</a>
+<a href="dontclick.html">Don't Click</a>
+<br>
+<ul class="circle">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+<ul id="square">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+<ol id="alpha">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ol>
+<ul class="plain">
+	<li>Coffee</li>
+	<li>Tea</li>
+	<li>Coca Cola</li>
+</ul>
+<ul class="plain">
+	<li id="custom">Coffee</li>
+	<li id="custom">Tea</li>
+	<li id="custom">Coca Cola</li>
+</ul>
+
+</body>
+</html>

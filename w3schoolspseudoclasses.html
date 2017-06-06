@@ -1,0 +1,91 @@
+<!-- Pseudo-classes Pseudo-elements -->
+
+<!doctype html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+	color: #ff0000;
+}
+
+/* visited link */
+a:visited {
+	color: #00ff00;
+}
+
+/* mouse over link */
+a:hover {
+	color: #ff00ff;
+}
+
+/* selected link */
+a:active {
+	color: #0000ff;
+}
+
+/* mouse over link class="hover" */
+a.highlight:hover {
+	color: #000000;
+}
+
+p:first-child {
+	color: blue;
+}
+
+p::first-line{
+	color: #ff0000;
+	font-variant: small-caps;
+}
+
+p::first-letter{
+	color: pink;
+	font-size: 20px;
+}
+
+#secondid::first-letter{
+	color: brown;
+	font-size: 30px;
+}
+
+h1::before{
+	content: url(tomtom.jpg);
+}
+
+h1::after{
+	content: url(tomtom.jpg);
+}
+
+h2::before{
+	content: "Read this: "; /* content: open-quote; works, too as a quote */
+}
+
+h2::after{
+	content: ":Read again"; /* content: open-quote; works, too as a quote */
+}
+
+</style>
+	<meta charset="UTF-8">
+	<title>w3schools CSS www.w3schools.com/css/</title>
+</head>
+<body>
+<p>Pseudo-class is used to define a special state of an element.  For example, it can be used to style an element when a user mouses over it or style visited and unvisited links differently.  The syntax is the following--> selector:pseudo-class{property:value;}</p>
+
+<a href="default.asp" target="_blank">This is a link.</a>
+<br>
+<a href="w3schoolshorizontalalign.html" target="_blank">Horizontal Align</a>
+<a href="w3schoolsfloat.html" class="highlight" target="_blank">Pseudo can work on classes</a>
+<p>The :first-child pseudo-class matches a specified element that is the first child of another element.  It's the first-child element of the parent element.  In this case, it's the first paragraph p from the parent body Psuedo classe is used to define a special . . . </p>
+<p>This is some text.</p>
+<div>
+<p>This is some text which is blue because it's the first-child of the div tag above the line.</p>
+</div>
+<p>This is some text.</p>
+<p>BTW, we can also use an element inside a first-child.  For example, p:first-child i {color: blue;} colors all italized text blue inside the first child p element.  Another example p i:first-child {color: blue;} colors all first italized text blue inside all p elements.</p>
+<p>A pseudo-element is used to style specified parts of an element.  For example it can be used to style the first letter, or line, of an element or insert content before or after the content of an element.  The syntax is the following:  selector::pseudo-element{property:value;}</p>
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text.  Some more ntext, and even more, and more, and more, and move, and more, and more, and move,  and more, and more, and move,  and more, and more, and move,  and more, and more, and move,  and more, and more, and move,  and more, and more, and move,  </p>
+<p id="secondid">Brown first letter color using id.</p>
+<p>The ::before and ::after can be used to insert some content before and after the content of an element.</p>
+<h1>This is a heading with image content</h1>
+<h2>This is a heading with text content</h2>
+</body>
+</html>

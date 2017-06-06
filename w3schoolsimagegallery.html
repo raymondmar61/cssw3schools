@@ -1,0 +1,64 @@
+<!-- Image Gallery -->
+<!-- Image Transparency -->
+
+<!doctype html>
+<head>
+<style>
+div.img {
+	width: 350px;
+	height: 250px;
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+	text-align: center; /* image is also centered */
+	float: left;
+}
+div.img img {
+	margin: 5px;
+	border: 1px solid red; /* border added to note the CSS style tag */
+	opacity: 0.4;  /* 0.0-1.0 opacity or transparency range */
+	/* filter: alpha(opacity=40); */ /* for IE8 and earlier */
+}
+div.img:hover { /* it seems :hover works for images like a:hover */
+/*	opacity: 1.0;  /* 0.0-1.0 opacity or transparency range */
+	/* filter: alpha(opacity=100); */ /* for IE8 and earlier */
+	background-color: lightblue;
+}
+/* I created a separate CSS div.img img:hover for opacity: 1.0; because div.img img opacity: 0.4; overrides the div.img:hover opacity: 1.0; */
+div.img img:hover { /* it seems :hover works for images like a:hover */
+	opacity: 1.0;  /* 0.0-1.0 opacity or transparency range */
+	/* filter: alpha(opacity=100); */ /* for IE8 and earlier */
+}
+div.desc { 
+	/* same properties as div.img */
+	text-align: center;
+	width: 350px;
+	margin: 5px;
+
+}
+
+</style>
+	<meta charset="UTF-8">
+	<title>w3schools CSS www.w3schools.com/css/</title>
+</head>
+<body>
+<div class="img">
+	<a href="castlerock2.jpg"><img src="castlerock2.jpg" alt="" width="300" height="200"></a>
+	<div class="desc">Add a description here</div>
+</div>
+<div class="img">
+	<a href="castlerock2.jpg"><img src="castlerock2.jpg" alt="" width="300" height="200"></a>
+	<div class="desc">Add a description here</div>
+</div>
+
+<div class="img">
+	<a href="castlerock2.jpg"><img src="castlerock2.jpg" alt="" width="300" height="200"></a>
+	<div class="desc">Add a description here</div>
+</div>
+
+<div class="img">
+	<a href="castlerock2.jpg"><img src="castlerock2.jpg" alt="" width="300" height="200"></a>
+	<div class="desc">Add a description here</div>
+</div>
+</body>
+</html>

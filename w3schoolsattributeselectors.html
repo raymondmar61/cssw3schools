@@ -1,0 +1,41 @@
+<!-- Attribute Selectors -->
+
+<!doctype html>
+<head>
+<style>
+a[target] { /* [target]{} and [target=_blank] {} also works */
+	background-color: yellow;
+}
+
+[title~=tree] { /* all attributes with the word "tree" gets a yellow border */
+	border: 5px solid yellow;
+}
+
+[title*=tree] { /* all attributes containing "tree" gets a red border */
+	border: 5px solid red;
+}
+/* [class|=tree] {} searches for all attributes begin with "tree" */
+/* [class^=tree] {} searches for all attributes begin with containing "tree" */
+/* [class$=tree] {} searches for all attributes end with "tree" */
+
+</style>
+	<meta charset="UTF-8">
+	<title>w3schools CSS www.w3schools.com/css/</title>
+</head>
+<body>
+<p>It's possible to style HTML elements which have specific attributes, not just class and id</p>
+<p>HTML element with a specified attribute is denoted in square braces around the attribute name.  The HTML element can be removed and just include the square braces with attribute name inside.</p>
+<p>The links with a target attribute gets a yellow background:</p>
+
+<a href="http://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+<br>
+<img src="castlerock2.jpg" width="300" height="200" title="tree" alt="">
+<img src="castlerock2.jpg" width="300" height="200" title="tree more" alt="">
+<img src="castlerock2.jpg" width="300" height="200" title="more trees" alt="">
+
+
+
+</body>
+</html>
